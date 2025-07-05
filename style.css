@@ -160,3 +160,101 @@ body {
 .dropdown a:hover {
   background-color: #f1f1f1;
 }
+
+
+/* Side Bar */
+
+.sidebar-left {
+  width: 270px;
+  margin-top: 20px;
+}
+
+.profile-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  font-size: 14px;
+}
+
+.cover {
+  background: linear-gradient(135deg, #563d7c, #6f42c1);
+  height: 60px;
+}
+
+.profile-pic {
+  display: flex;
+  justify-content: center;
+  margin-top: -30px;
+}
+
+.profile-pic img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.profile-info {
+  padding: 10px;
+  text-align: center;
+}
+
+.profile-info h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.profile-info .title {
+  color: #555;
+  font-size: 13px;
+}
+
+.profile-info .location,
+.profile-info .college {
+  font-size: 12px;
+  color: #777;
+  margin-top: 5px;
+}
+
+.stats {
+  border-top: 1px solid #eee;
+  padding: 10px;
+}
+
+.stats div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.premium {
+  background: #f3f2ef;
+  padding: 10px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.premium a {
+  color: #0a66c2;
+  font-weight: bold;
+  display: block;
+  margin-top: 5px;
+}
+
+.quick-links {
+  border-top: 1px solid #eee;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.quick-links a {
+  color: #333;
+  text-decoration: none;
+}
+
+.quick-links a:hover {
+  color: #0a66c2;
+}
