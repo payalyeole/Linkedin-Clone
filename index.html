@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
     <!-- LinkedIn Clone Navbar -->
 <nav class="linkedin-navbar">
   <div class="navbar-left">
@@ -24,19 +25,32 @@
       <li><i class="fas fa-bell"></i><span>Notifications</span></li>
     </ul>
   </div>
-  <div class="profile-menu" onclick="toggleDropdown()">
+
+
+ <div class="profile-menu" id="profileMenu">
   <img src="img/photo.png" alt="Me" class="profile-img" />
   <span>Me <i class="fas fa-caret-down"></i></span>
+
   <div class="dropdown" id="meDropdown">
-    <a href="#">View Profile</a>
+    <a href="https://www.linkedin.com/in/payal-yeole-b7609022a">View Profile</a>
     <a href="#">Settings</a>
     <a href="#">Logout</a>
   </div>
 </div>
 
+
+<div class="navbar-right">
+  <div class="business-btns">
+    <a href="#" class="nav-btn">For Business</a>
+    <a href="#" class="nav-btn">Advertise</a>
+  </div>
+
+</div>
+
 </nav>
 
-<section style="display: flex;">
+<section class="main-section">
+    <!-- left side bar -->
 <aside class="sidebar-left">
   <div class="profile-card">
     <div class="cover"></div>
@@ -73,37 +87,55 @@
 </aside>
 
 <main class="main-feed">
-    <div class="start-post-box">
+
+<!-- Start Post  -->
+<div class="start-post-box">
   <div class="start-post-top">
     <img src="img/photo.png" alt="Profile" />
-    <input type="text" placeholder="Start a post" />
+    <input type="text" placeholder="Start a post" id="postInput" readonly />
+
   </div>
   <div class="start-post-actions">
-    <button><i class="fas fa-image"></i> Media</button>
+    <button id="mediaBtn"><i class="fas fa-image"></i> Media</button>
     <button><i class="fas fa-briefcase"></i> Job</button>
     <button><i class="fas fa-file-alt"></i> Write Article</button>
   </div>
+
+  <!-- Hidden post creation popup -->
+  <div class="post-popup" id="postPopup">
+    <textarea id="postDesc" placeholder="What do you want to talk about?"></textarea>
+    <input type="file" id="postImage" accept="image/*" />
+    <button id="createPostBtn">Post</button>
+  </div>
 </div>
 
-  <div class="post-box">
-    <div class="post-header">
-      <img src="img/photo.png" alt="User" />
-      <div class="user-info">
-        <h4>Payal Yeole</h4>
-        <p>Aspiring Java Developer • 2h ago</p>
-      </div>
-    </div>
-    <div class="post-content">
-      <p>🚀 Just completed my LinkedIn Clone using HTML, CSS, JS – fully responsive! 💻</p>
-      <img src="img/photo.png" alt="Post image" />
-    </div>
-    <div class="post-actions">
-      <button><i class="fas fa-thumbs-up"></i> Like</button>
-      <button><i class="fas fa-comment-dots"></i> Comment</button>
-      <button><i class="fas fa-share"></i> Share</button>
-      <button><i class="fas fa-paper-plane"></i> Send</button>
+<!-- Posts will be shown here -->
+<div class="posts" id="postsContainer">
+
+
+<!-- Post Box -->
+<div class="post">
+  <button class="remove-post">×</button>
+  <h4>Payal Yeole</h4>
+  <p class="desc">Excited to start my journey as a Java Full Stack Developer!</p>
+  <img src="img/feed.png" alt="Post Image" />
+
+  <div class="post-actions">
+    <button class="like-btn"><i class="fas fa-thumbs-up"></i> Like (<span class="like-count">0</span>)</button>
+    <button class="comment-toggle"><i class="fas fa-comment-dots"></i> Comment</button>
+    <button><i class="fas fa-share"></i> Share</button>
+    <button><i class="fas fa-paper-plane"></i> Send</button>
+  </div>
+
+  <div class="comment-box" style="display: none;">
+    <input type="text" class="comment-input" placeholder="Add a comment..." />
+    <div class="comment-list">
+        <p>All the best!</p>
+        <p>Keep learning and growing!</p>
     </div>
   </div>
+</div>
+</div>
 </main>
 
 
@@ -136,6 +168,6 @@
 
 <!-- FontAwesome for icons -->
 <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
+<script src="script.js"></script>
 </body>
 </html>
