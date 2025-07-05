@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkedin Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- LinkedIn Clone Navbar -->
+<nav class="linkedin-navbar">
+  <div class="navbar-left">
+    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn Logo" class="logo" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+    <input type="text" class="search-bar" placeholder="Search" />
+  </div>
+  <div class="navbar-center">
+    <ul class="nav-icons">
+      <li><i class="fas fa-home"></i><span>Home</span></li>
+      <li><i class="fas fa-user-friends"></i><span>My Network</span></li>
+      <li><i class="fas fa-briefcase"></i><span>Jobs</span></li>
+      <li><i class="fas fa-comment-dots"></i><span>Messaging</span></li>
+      <li><i class="fas fa-bell"></i><span>Notifications</span></li>
+    </ul>
+  </div>
+  <div class="profile-menu" onclick="toggleDropdown()">
+  <img src="img/photo.png" alt="Me" class="profile-img" />
+  <span>Me <i class="fas fa-caret-down"></i></span>
+  <div class="dropdown" id="meDropdown">
+    <a href="#">View Profile</a>
+    <a href="#">Settings</a>
+    <a href="#">Logout</a>
+  </div>
+</div>
+
+</nav>
+
+
+
+
+
+<!-- FontAwesome for icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
