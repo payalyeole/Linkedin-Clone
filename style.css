@@ -54,8 +54,8 @@ body {
 
 .navbar-left {
   display: flex;
-  align-items: center;
   gap: 10px;
+    margin-left: 12rem;
 }
 
 .logo {
@@ -65,8 +65,8 @@ body {
 .search-bar {
   padding: 8px 10px;
   border: 1px solid #ccc;
-  border-radius: 5px;
-  width: 200px;
+  border-radius: 20px;
+  width: 250px;
 }
 
 .navbar-center {
@@ -109,9 +109,33 @@ body {
 /* Navbar Right section */
 /* -------------------- */
 
-.navbar-right {
+
+
+.business-icons {
   display: flex;
+  gap: 30px;
   align-items: center;
+  justify-content: center;
+  margin-right: 10rem;
+}
+
+.business-icons a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #5e5e5e;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.business-icons a i {
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.business-icons a:hover {
+  color: #0a66c2;
 }
 
 .profile-menu {
@@ -120,6 +144,7 @@ body {
   gap: 5px;
   cursor: pointer;
   position: relative;
+  margin-right: 1rem;
 }
 
 .profile-img {
@@ -218,8 +243,8 @@ body {
 }
 
 .cover {
-  background: linear-gradient(135deg, #563d7c, #6f42c1);
-  height: 60px;
+    background-image: url(img/back.png);
+    height: 60px;
 }
 
 .profile-pic {
@@ -236,8 +261,8 @@ body {
 }
 
 .profile-info {
-  padding: 10px;
-  text-align: center;
+  padding: 20px;
+  text-align: left;
 }
 
 .profile-info h3 {
@@ -268,10 +293,14 @@ body {
   margin-bottom: 5px;
 }
 
+.stats strong{
+    color: blue;
+}
+
 .premium {
   background: #f3f2ef;
   padding: 10px;
-  text-align: center;
+  text-align: left;
   font-size: 13px;
 }
 

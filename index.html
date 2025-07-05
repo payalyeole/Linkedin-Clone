@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Linkedin Clone</title>
     <link rel="stylesheet" href="style.css">
+    <!-- cloudflare -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+   <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
 </head>
 <body>
     
@@ -12,17 +17,15 @@
 <nav class="linkedin-navbar">
   <div class="navbar-left">
     <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn Logo" class="logo" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-
     <input type="text" class="search-bar" placeholder="Search" />
   </div>
   <div class="navbar-center">
     <ul class="nav-icons">
-      <li><i class="fas fa-home"></i><span>Home</span></li>
-      <li><i class="fas fa-user-friends"></i><span>My Network</span></li>
-      <li><i class="fas fa-briefcase"></i><span>Jobs</span></li>
-      <li><i class="fas fa-comment-dots"></i><span>Messaging</span></li>
-      <li><i class="fas fa-bell"></i><span>Notifications</span></li>
+      <li><i class="bi bi-house-fill"></i><span>Home</span></li>
+      <li><i class="bi bi-people-fill"></i><span>My Network</span></li>
+      <li><i class="bi bi-briefcase-fill"></i><span>Jobs</span></li>
+      <li><i class="bi bi-chat-dots-fill"></i></i><span>Messaging</span></li>
+      <li><i class="bi bi-bell-fill"></i></i><span>Notifications</span></li>
     </ul>
   </div>
 
@@ -40,10 +43,17 @@
 
 
 <div class="navbar-right">
-  <div class="business-btns">
-    <a href="#" class="nav-btn">For Business</a>
-    <a href="#" class="nav-btn">Advertise</a>
+  <div class="business-icons">
+    <a href="#">
+    <i class="bi bi-building-fill"></i>
+      <span>For Business</span>
+    </a>
+    <a href="#">
+      <i class="fas fa-bullhorn"></i>
+      <span>Advertise</span>
+    </a>
   </div>
+</div>
 
 </div>
 
@@ -61,7 +71,7 @@
       <h3>Payal Yeole <i class="fas fa-badge-check"></i></h3>
       <p class="title">Aspiring Java Full Stack Developer | Java | HTML, CSS, JS | Spring Boot</p>
       <p class="location">Nagpur, Maharashtra</p>
-      <p class="college">Tulsiramji Gaikwad Patil Institute of Engineering and Technology, Mohgaon</p>
+      <p class="college"><b>Tulsiramji Gaikwad Patil Institute of Engineering and Technology, Mohgaon</b></p>
     </div>
     <div class="stats">
       <div>
@@ -78,11 +88,12 @@
       <a href="#">Try Premium for ₹0</a>
     </div>
     <div class="quick-links">
-      <a href="#">Saved items</a>
-      <a href="#">Groups</a>
-      <a href="#">Newsletters</a>
-      <a href="#">Events</a>
+        <a href="#"><i class="fas fa-bookmark"></i> Saved items</a>
+        <a href="#"><i class="fas fa-users"></i> Groups</a>
+        <a href="#"><i class="fas fa-envelope-open-text"></i> Newsletters</a>
+        <a href="#"><i class="fas fa-calendar-alt"></i> Events</a>
     </div>
+
   </div>
 </aside>
 
@@ -96,9 +107,9 @@
 
   </div>
   <div class="start-post-actions">
-    <button id="mediaBtn"><i class="fas fa-image"></i> Media</button>
-    <button><i class="fas fa-briefcase"></i> Job</button>
-    <button><i class="fas fa-file-alt"></i> Write Article</button>
+      <button style="color: green;"><i class="bi bi-play-btn-fill"></i> Video</button>
+      <button style="color: blue;" id="mediaBtn"><i class="bi bi-image-fill"></i> Photo</button>
+    <button style="color: orange;"><i class="fas fa-file-alt"></i> Write Article</button>
   </div>
 
   <!-- Hidden post creation popup -->
@@ -116,9 +127,32 @@
 <!-- Post Box -->
 <div class="post">
   <button class="remove-post">×</button>
-  <h4>Payal Yeole</h4>
-  <p class="desc">Excited to start my journey as a Java Full Stack Developer!</p>
-  <img src="img/feed.png" alt="Post Image" />
+  <div class="start-post-top">
+    <img src="img/feedPro.png" alt="Profile" />
+      <div style="">
+        <h4>Shradha Sharma</h4> 
+        <p>SDE @Adobe | Global Rank 31 - ICPC Algo Queen'23 | 85k+ @Linkedin | PICT'24 | Open for Collaboration</p>
+      </div>
+    </div>
+  <p class="desc">
+
+Guyss!!<br>
+<span style="color: blue;"><b>Flipkart</b></span> Grid 7.0 is accepting the applications!<br>
+
+It is for the all students pursuing <span style="color: blue;">https://lnkd.in/dQZf-naH</span> or integrated degrees<br>
+
+This hiring challenge provides the following opportunities:<br>
+SDE1 full time roles with 32 lakhs p.a <br>
+SDE internships with 1lakh p.m <br>
+
+Check the eligibility and Apply here: <span style="color: blue;">https://lnkd.in/dx2PWumq</span><br>
+
+Do like to help reach more students. <br>
+
+Shraddha Pawar <br>
+
+<span style="color: blue;">#letsgrowtogether</span></p>
+  <img src="img/feed2.png" alt="Post Image" />
 
   <div class="post-actions">
     <button class="like-btn"><i class="fas fa-thumbs-up"></i> Like (<span class="like-count">0</span>)</button>
